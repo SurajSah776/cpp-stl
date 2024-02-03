@@ -96,9 +96,9 @@ int main()
         cout << it << "  ";
     }
 
-    // Other Functions
+    // 4. Other Functions
     // reverse(), sort(), unique(), merge(), empty(), size(), clear()
-    cout << "\n\nOther Functions" << endl;
+    cout << "\n\n\n4. Other Functions" << endl;
     cout << "Size = " << l1.size() << endl;
     cout << "Empty = " << l1.empty() << endl;
 
@@ -111,7 +111,21 @@ int main()
     l1.sort();
     l1.unique(); // Removes Duplicates
 
-    cout << "\nList-1 (After Sort)" << endl;
+    cout << "\n\nList-1 (After Sort)" << endl;
+    for (auto it : l1)
+    {
+        cout << it << "  ";
+    }
+
+    l1.reverse();
+    cout << "\n\nList-1 (After Reverse)" << endl;
+    for (auto it : l1)
+    {
+        cout << it << "  ";
+    }
+
+    l1.merge(l3);
+    cout << "\n\nList-1 (After Merge)" << endl;
     for (auto it : l1)
     {
         cout << it << "  ";
